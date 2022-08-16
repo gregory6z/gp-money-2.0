@@ -21,6 +21,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body , input , textarea , button{
-    font-family: 300 1rem Roboto , sans-serif; ;
+    font: 300 1rem 'Roboto', sans-serif; ;
   }
 `;
