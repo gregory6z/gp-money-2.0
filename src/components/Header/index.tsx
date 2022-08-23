@@ -20,7 +20,7 @@ export function Header() {
             <NewTransactionsButton>Nova transacao</NewTransactionsButton>
           </Dialog.Trigger>
 
-         <NewTransactionModal></NewTransactionModal>
+          <NewTransactionModal></NewTransactionModal>
         </Dialog.Root>
       </HeaderContent>
     </HeaderContainer>

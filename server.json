@@ -15,6 +15,38 @@
       "category": "Venda",
       "price": 50,
       "createdAt": "2022-08-23T16:50:30.605Z"
+    },
+    {
+      "description": "desenvolvimento de app",
+      "price": 100000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2022-08-23T21:35:00.966Z",
+      "id": 3
+    },
+    {
+      "description": "kebab",
+      "price": 20,
+      "category": "alimentacao",
+      "type": "outcome",
+      "createdAt": "2022-08-23T21:59:27.437Z",
+      "id": 4
+    },
+    {
+      "description": "Computador",
+      "price": 2550,
+      "category": "informatica",
+      "type": "outcome",
+      "createdAt": "2022-08-23T22:01:23.927Z",
+      "id": 5
+    },
+    {
+      "description": "Passeio",
+      "price": 60,
+      "category": "lazer",
+      "type": "outcome",
+      "createdAt": "2022-08-23T22:13:15.376Z",
+      "id": 6
     }
   ]
 }
