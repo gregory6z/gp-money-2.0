@@ -20,6 +20,6 @@ export function useSummary() {
       outcome: 0,
       total: 0,
     }
-  );
+  )
   return summary;
 }
