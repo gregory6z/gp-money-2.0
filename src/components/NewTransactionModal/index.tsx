@@ -10,7 +10,6 @@ import {
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
-import { api } from "../../lib/axios";
 import { useContext } from "react";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
 
@@ -53,7 +52,7 @@ export function NewTransactionModal() {
     <Dialog.Portal>
       <Overlay />
       <Content>
-        <Dialog.Title>Nova transacao</Dialog.Title>
+        <Dialog.Title>Nouvelle Opération</Dialog.Title>
         <CloseButton>
           <X size="24" />
         </CloseButton>
@@ -61,19 +60,19 @@ export function NewTransactionModal() {
         <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
           <input
             type="text"
-            placeholder="Descricao"
+            placeholder="Description"
             required
             {...register("description")}
           />
           <input
             type="number"
-            placeholder="Preco"
+            placeholder="Price"
             required
             {...register("price", { valueAsNumber: true })}
           />
           <input
             type="text"
-            placeholder="Categoria"
+            placeholder="Catégorie"
             required
             {...register("category")}
           />
@@ -89,12 +88,12 @@ export function NewTransactionModal() {
                 >
                   <TransactionTypeButton value="income" variant="income">
                     <ArrowCircleUp size={24} />
-                    Entrada
+                    Entrée
                   </TransactionTypeButton>
 
                   <TransactionTypeButton value="outcome" variant="outcome">
                     <ArrowCircleDown size={24} />
-                    Saida
+                    Sortie
                   </TransactionTypeButton>
                 </TransactionType>
               );

@@ -31,12 +31,12 @@ export function SearchForm() {
     <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>
       <input
         type="text"
-        placeholder="Busque por transacoes"
+        placeholder="Rechercher des transactions"
         {...register("query")}
       />
       <button type="submit" disabled={isSubmitting}>
         <MagnifyingGlass size={20} />
-        Buscar
+        Chercher
       </button>
     </SearchFormContainer>
   );
