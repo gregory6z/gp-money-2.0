@@ -38,12 +38,16 @@ export function NewTransactionModal() {
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
     const { description, price, category, type } = data;
 
+    console.log(data)
+
     await createTransaction({
       description,
       price,
       category,
       type,
     });
+
+    
 
     reset();
   }
