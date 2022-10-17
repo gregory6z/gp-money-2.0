@@ -101,7 +101,7 @@ export function NewTransactionModal() {
           />
 
           <button type="submit" disabled={isSubmitting}>
-            Cadastrar
+            Enregistrer
           </button>
         </form>
       </Content>
